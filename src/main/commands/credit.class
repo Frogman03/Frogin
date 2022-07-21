@@ -1,0 +1,21 @@
+package com.firstplugin;
+
+import org.bukkit.command.command;
+import org.bukkit.comand.commandexecurtor;
+import org.bukkit.command.commandsender;
+
+public class credit implements commandexecurtor {
+
+    @Override
+    public boolean command(commandsender commandsender, command command, string label, string[] args) {
+       if (!(sender instanceof player))  {return true; }
+       
+        if (sender instanceof player) 
+            player player = (player) sender; 
+
+    // command
+    if (sender = player)
+      if (cmd.getname().equalsignorecase(commandexecutor "tell"))
+        player.sendmessage(s: "Credit to frogman")
+
+        

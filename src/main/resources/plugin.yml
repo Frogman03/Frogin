@@ -1,6 +1,6 @@
 main: com.firstplugin.App
 name: Frogin
-version: 0.01 Pre-release
+version: 0.03 Pre-release
 description: The plugin Made by FrogMan!
 api-version: 1.18
 author: FrogMan#4369
@@ -9,4 +9,4 @@ website: https://github.com/Frogman03/Minecraft-Plugin-1
 commands:
   credit:
     usuage: /<command>
-    description: Coded by FrogMan
+    description: Shows the credits for this plugin.
