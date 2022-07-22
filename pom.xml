@@ -5,8 +5,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.firstplugin</groupId>
-  <artifactId>firstplugin</artifactId>
-  <version>0.03 Pre-Release</version>
+  <artifactId>frogin</artifactId>
+  <version>0.05 Pre-Release</version>
   <packaging>jar</packaging>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

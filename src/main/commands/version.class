@@ -1,17 +1,17 @@
 package com.firstplugin;
 
 import org.bukkit.command.command
-import org.bukkit.command.commandexecurtor
+import org.bukkit.command.commandexecutor
 import org.bukkit.command.commandsender
 
 public class version implements commandexecutor
 
-(version = 0.03 Pre-Release)
+(version = "0.04 Pre Release")
 
 @Override
-public boolean command(commandsender, command command){
+public boolean command(commandsender, command command, commandexecurtor){
 if(!(sender instanceof player))
-player.sendmessage = "Hello there console! This version of the frogin is {version}"
+player.sendmessage = ("Hello there console! This version of the frogin is {version}")
 return false;
 }
 
