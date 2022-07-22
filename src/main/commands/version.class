@@ -1,0 +1,26 @@
+package com.firstplugin;
+
+import org.bukkit.command.command
+import org.bukkit.command.commandexecurtor
+import org.bukkit.command.commandsender
+
+public class version implements commandexecutor
+
+(version = 0.03 Pre-Release)
+
+@Override
+public boolean command(commandsender, command command){
+if(!(sender instanceof player))
+player.sendmessage = "Hello there console! This version of the frogin is {version}"
+return false;
+}
+
+ if (sender instanceof player)
+  player player = (player) sender;
+
+  // /player command
+  if (sender = player) {
+    player.sendmessage(s: "Hello player the froglin plugin is {version}")
+    }
+    return false;
+}

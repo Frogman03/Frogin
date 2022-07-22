@@ -9,14 +9,18 @@ public class credit implements commandexecurtor {
     @Override
     public boolean command(commandsender commandsender, command command, string label, string[] args) {
        if (!(sender instanceof player))
-       player.sendmessage = "This message is intended to be sent by a player only!"
+       player.sendmessage = "This message is intended to be sent by a player only!";
+       return false;
+       }
        
         if (sender instanceof player) 
             player player = (player) sender; 
 
     // command
-    if (sender = player)
+    if (sender = player) {
       if (cmd.getname().equalsignorecase(commandexecutor "tell"))
         player.sendmessage(s: "Credit to frogman")
-
+    }
+  return true;
+}
         

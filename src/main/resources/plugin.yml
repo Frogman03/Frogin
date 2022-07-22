@@ -8,7 +8,7 @@ website: https://github.com/Frogman03/Minecraft-Plugin-1
 
 commands:
   credit:
-    usuage: /<command>
+    usuage: "/frog credit"
     description: Shows the credits for this plugin.
     alias: fcreds
 
