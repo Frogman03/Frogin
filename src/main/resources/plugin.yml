@@ -11,3 +11,8 @@ commands:
     usuage: /<command>
     description: Shows the credits for this plugin.
     alias: fcreds
+
+  version:
+    usuage: "/frogin version"
+    description: shows the version of the plugin
+    alias: fver
