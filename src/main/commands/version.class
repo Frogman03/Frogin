@@ -22,5 +22,5 @@ return false;
   if (sender = player) {
     player.sendmessage(s: "Hello player the froglin plugin is {version}")
     }
-    return false
+    return false;
 }
