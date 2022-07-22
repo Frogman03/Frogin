@@ -1,8 +1,8 @@
 package com.firstplugin;
 
-import org.bukkit.command.command
-import org.bukkit.command.commandexecutor
-import org.bukkit.command.commandsender
+import org.bukkit.command.command;
+import org.bukkit.comand.commandexecurtor;
+import org.bukkit.command.commandsender;
 
 public class version implements commandexecutor
 
@@ -11,11 +11,10 @@ public class version implements commandexecutor
 @Override
 public boolean command(commandsender, command command, commandexecurtor){
 if(!(sender instanceof player))
-player.sendmessage = ("Hello there console! This version of the frogin is {version}")
-return false;
+player.sendmessage(s: "Hello there console! This version of the frogin is {version}")  {return false;}
 }
 
- if (sender instanceof player)
+if (sender instanceof player)
   player player = (player) sender;
 
   // /player command
@@ -23,4 +22,3 @@ return false;
     player.sendmessage(s: "Hello player the froglin plugin is {version}")
     }
     return false;
-}
