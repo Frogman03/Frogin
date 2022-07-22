@@ -10,3 +10,4 @@ commands:
   credit:
     usuage: /<command>
     description: Shows the credits for this plugin.
+    alias: fcreds
