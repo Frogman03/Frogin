@@ -20,6 +20,7 @@ public class fkillCommand implements CommandExecutor {
             if (args.length == 0) {
                 p.sendMessage("You decided that your too good for the world and disappeared in an instance");
                 p.setHealth(0.0);
+                System.out.println(player.getDisplayName() + " Has killed themself.");
 
 
             } else {
@@ -29,17 +30,22 @@ public class fkillCommand implements CommandExecutor {
                 Player target = Bukkit.getServer().getPlayerExact(PlayerName);
 
                 if (target == null) {
-                    p.sendMessage("Player not found");
+                    p.sendMessage(ChatColor.GRAY + "Player not found");
                 } else {
-                    p.sendMessage("You successfully Erased " + target.getDisplayName());
-                    target.sendMessage("You have been Erased by someone");
+                    p.sendMessage(ChatColor.GRAY + "You successfully Erased " + ChatColor.YELLOW + target.getDisplayName());
+                    target.sendMessage(ChatColor.GRAY + "You have been Erased by someone");
                     target.setHealth(0.0);
+                    System.out.println(target.getDisplayName() + " Has been killed by " + player.getDisplayName());
 
 
                     return false;
                 }
 
             }
+        }
+        if (!(sender instanceof Player)) {
+            System.out.println("You cant be killed already and its staying that way.");
+
         }
         return false;
     }

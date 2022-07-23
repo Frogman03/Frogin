@@ -33,10 +33,8 @@ public class setspawnCommand implements CommandExecutor {
 
                 plugin.saveConfig();
 
-                player.sendMessage("Spawn location has been set!");
+                player.sendMessage(ChatColor.GREEN + "Spawn location has been set!");
 
-                if (!(sender instanceof Player))
-                    System.out.println("The console cant set a spawn location because its not even in a location Silly!");
 
 
             } else {
@@ -47,6 +45,8 @@ public class setspawnCommand implements CommandExecutor {
 
             return true;
 
+        }else {
+            System.out.println("You cant set the spawn of the thing you aint in.");
         }
 
 

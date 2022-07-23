@@ -9,20 +9,20 @@ import org.bukkit.entity.Player;
 public class AboutCommand implements CommandExecutor {
 
     @Override
-    public boolean onCommand (CommandSender sender, Command command, String label, String[] args) {
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        Player player = (Player) sender;
-        if (!(sender instanceof Player)) {
+        if (sender instanceof Player player) {
 
+            player.sendMessage(ChatColor.GRAY + "Hello " + ChatColor.YELLOW + player.getDisplayName() + ChatColor.GRAY + " This plugin is described as the Frog-Made plugin!");
+
+
+        } else {
             System.out.println("Hello there console, this plugin is described as the Frog-made plugin");
-
-
-        }else {
-            player.sendMessage("Hello " + ChatColor.YELLOW + player.getDisplayName() + ChatColor.WHITE + " This plugin is described as the Frog-Made plugin!");
+            return false;
         }
 
         return false;
     }
-
-
 }
+
+

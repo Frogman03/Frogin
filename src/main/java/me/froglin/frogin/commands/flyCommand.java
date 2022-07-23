@@ -17,20 +17,23 @@ public class flyCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-
-        if (sender instanceof Player) {
-            Player player = (Player) sender;
-            if (args.length == 0) {
-                if (player.hasPermission("Frogin.flyCommand")) {
-                    if (list_of_flying_players.contains(player)){
-                        list_of_flying_players.remove(player);
-                        player.setAllowFlight(false);
-                        player.sendMessage(ChatColor.AQUA + "Fly mode has been disabled!");
-                    } else if (!list_of_flying_players.contains(player)) {
-                        list_of_flying_players.add(player);
-                        player.setAllowFlight(true);
-                        player.sendMessage(ChatColor.AQUA + "Fly mode has been enabled.");
-
+        if (!(sender instanceof Player)) {
+            System.out.println("You cant fly when not on the server silly.");
+        }else {
+                Player player = (Player) sender;
+                if (args.length == 0) {
+                    if (player.hasPermission("Frogin.flyCommand")) {
+                        if (list_of_flying_players.contains(player)) {
+                            list_of_flying_players.remove(player);
+                            player.setAllowFlight(false);
+                            player.sendMessage(ChatColor.RED + "Fly mode has been disabled!");
+                            System.out.println(player.getDisplayName() + " Has disabled fly mode.");
+                        } else if (!list_of_flying_players.contains(player)) {
+                            list_of_flying_players.add(player);
+                            player.setAllowFlight(true);
+                            player.sendMessage(ChatColor.AQUA + "Fly mode has been enabled.");
+                            System.out.println(player.getDisplayName() + " Has enabled fly mode");
+                        }
 
                     }
 
@@ -40,8 +43,9 @@ public class flyCommand implements CommandExecutor {
 
             }
 
-            return true;
+
+            return false;
         }
-        return false;
+
     }
-}
+

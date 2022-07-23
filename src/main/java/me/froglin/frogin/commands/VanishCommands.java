@@ -2,6 +2,7 @@ package me.froglin.frogin.commands;
 
 import me.froglin.frogin.Frogin;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -31,14 +32,14 @@ public class VanishCommands implements CommandExecutor {
                 people.showPlayer(plugins, player);
             }
             invisible_list.remove(player);
-            player.sendMessage("You have unvanished and now can be seen");
+            player.sendMessage(ChatColor.RED + "You have unvanished you can now be seen by others");
 
         } else if (!(invisible_list.contains(player))) {
             for (Player people : Bukkit.getOnlinePlayers()) {
                 people.hidePlayer(plugins, player);
             }
                  invisible_list.add(player);
-                 player.sendMessage("You are now Vanished!");
+                 player.sendMessage(ChatColor.GREEN + "You are now Vanished!");
         }
 
         }

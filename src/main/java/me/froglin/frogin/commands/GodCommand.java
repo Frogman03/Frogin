@@ -13,9 +13,8 @@ public class GodCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        if (sender instanceof Player) {
+        if (sender instanceof Player p) {
 
-            Player p = (Player) sender;
 
             if (p.isInvulnerable()) {
 
@@ -28,6 +27,8 @@ public class GodCommand implements CommandExecutor {
 
             return false;
         }
+        if (!(sender instanceof Player ));
+        System.out.println("Your already playing god, why do you need to become unkillable?");
         return false;
     }
 }

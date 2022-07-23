@@ -16,8 +16,10 @@ public class Adminjoinlistener implements Listener {
         Player player = event.getPlayer();
 
         if (player.hasPermission("Frogin.Adminjoinlistener")) {
-            event.setJoinMessage(ChatColor.YELLOW + player.getDisplayName() + " (Admin) Has returned!");
+            event.setJoinMessage(ChatColor.YELLOW + player.getDisplayName() + " Has returned!");
 
+            if (event.getPlayer().getUniqueId().equals("530ee96d-1aae-4191-8610-b781c866a6a6"));
+            event.setJoinMessage(ChatColor.YELLOW + player.getDisplayName() + " Has clocked in.");
 
         }else {
 
@@ -39,8 +41,10 @@ public class Adminjoinlistener implements Listener {
         Player p = event.getPlayer();
 
         if(p.hasPermission("Frogin.Adminjoinlistener")){
-            event.setQuitMessage(ChatColor.YELLOW + p.getDisplayName() + " (Admin) Has left, Wish them well!");
+            event.setQuitMessage(ChatColor.YELLOW + p.getDisplayName() + " Has left, Wish them well!");
 
+            if (event.getPlayer().getUniqueId().equals("530ee96d-1aae-4191-8610-b781c866a6a6"));
+            event.setQuitMessage(ChatColor.YELLOW + p.getDisplayName() + " Has left the office");
 
         }else {
             if (!(p.hasPermission("Frogin.Adminjoinlistener"))){
