@@ -1,6 +1,7 @@
 package me.froglin.frogin.commands;
 
 import org.bukkit.ChatColor;
+import org.bukkit.Server;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -22,8 +23,7 @@ public class CreditCommand implements CommandExecutor {
         } else {
             Player player = (Player) sender;
 
-            player.sendMessage("Hello " + ChatColor.YELLOW +player.getDisplayName() + ChatColor.WHITE + " All credit goes to FrogMan!");
-
+            player.sendMessage("Hello " + ChatColor.YELLOW +player.getDisplayName() + ChatColor.WHITE + " All credit goes to FrogMan, Credit to Tuchan for the tutorial videos which made the plugin go as far as it did.");
 
         }
 

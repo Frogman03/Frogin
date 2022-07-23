@@ -1,12 +1,13 @@
-me\froglin\frogin\commands\BanGUICommand.class
+me\froglin\frogin\commands\VanishCommands.class
 me\froglin\frogin\commands\fkillCommand.class
 me\froglin\frogin\commands\GitrepoCommand.class
+me\froglin\frogin\commands\IDKCommand.class
 me\froglin\frogin\commands\CreditCommand.class
-me\froglin\frogin\JoinLeavelistener.class
 me\froglin\frogin\commands\flyCommand.class
 me\froglin\frogin\commands\setspawnCommand.class
 me\froglin\frogin\Frogin.class
 me\froglin\frogin\commands\GodCommand.class
+me\froglin\frogin\listeners\FrogJoinlistener.class
 me\froglin\frogin\commands\SpawnCommand.class
 me\froglin\frogin\commands\hmCommand.class
 me\froglin\frogin\commands\VersionCommand.class

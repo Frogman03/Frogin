@@ -1,5 +1,5 @@
 name: Frogin
-version: 0.13 Pre-Release
+version: 0.15 Pre-Release
 main: me.froglin.frogin.Frogin
 api-version: 1.18
 authors: [ FrogMan ]
@@ -51,6 +51,10 @@ commands:
     description: Allows the executor to fly if they have the permissions.
     usage: /<command>
 
-  bangui:
-    description: Opens the ban gui
+  idk:
+    description: IDK is suggested by mbs
+    usage: /<command>
+
+  vanish:
+    description: makes you disappear
     usage: /<command>

@@ -2,11 +2,13 @@ package me.froglin.frogin;
 
 import me.froglin.frogin.commands.*;
 import me.froglin.frogin.listeners.Adminjoinlistener;
+import me.froglin.frogin.listeners.FrogJoinlistener;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.server.BroadcastMessageEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 import sun.java2d.opengl.WGLSurfaceData;
 
@@ -18,12 +20,14 @@ public final class Frogin extends JavaPlugin {
 
         System.out.println("Hello Console and frog! All is well.");
 
+
             //config.yml
             getConfig().options().copyDefaults();
             saveDefaultConfig();
 
 
         getServer().getPluginManager().registerEvents(new Adminjoinlistener(), this);
+        getServer().getPluginManager().registerEvents(new FrogJoinlistener(), this);
         getCommand("god").setExecutor(new GodCommand());
         getCommand("version").setExecutor(new VersionCommand());
         getCommand("credit").setExecutor(new CreditCommand());
@@ -35,7 +39,8 @@ public final class Frogin extends JavaPlugin {
         getCommand("setspawn").setExecutor(new setspawnCommand(this));
         getCommand("spawn").setExecutor(new SpawnCommand(this));
         getCommand("fly").setExecutor(new flyCommand());
-        getCommand("bangui").setExecutor(new BanGUICommand());
+        getCommand("IDK").setExecutor(new IDKCommand());
+        getCommand("vanish").setExecutor(new VanishCommands(this));
     }
 
     @Override
