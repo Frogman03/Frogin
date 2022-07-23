@@ -1,7 +1,28 @@
 name: Frogin
-version: '${project.version}'
+version: ${project.version}
 main: me.froglin.frogin.Frogin
 api-version: 1.18
 authors: [ FrogMan ]
 description: The Frog-Made plugin
 website: https://github.com/Frogman03/Frogin
+commands:
+  god:
+    description: Become Invincible.
+    usage: /<command>
+
+  version:
+    description: shows the version of the plugin.
+    usage: /<command>
+    aliases: fver
+
+  credit:
+    description: Shows credit to the creators.
+    usage: /<command>
+
+  website:
+    description: Shows the website of the github repo.
+    usage: /<command>
+
+  Adminhello:
+    description: Says hello to an administrator
+    usage: /<command>

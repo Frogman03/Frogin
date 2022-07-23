@@ -1,2 +1,7 @@
 me\froglin\frogin\Frogin.class
+me\froglin\frogin\commands\GodCommand.class
+me\froglin\frogin\commands\GitrepoCommand.class
+me\froglin\frogin\commands\VersionCommand.class
+me\froglin\frogin\commands\CreditCommand.class
+me\froglin\frogin\commands\AdminonlyCommand.class
 me\froglin\frogin\JoinLeavelistener.class
