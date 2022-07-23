@@ -6,7 +6,7 @@
 
     <groupId>me.froglin</groupId>
     <artifactId>frogin</artifactId>
-    <version>0.1 Pre-Release</version>
+    <version>0.13 Pre-Release</version>
     <packaging>jar</packaging>
 
     <name>Frogin</name>

@@ -26,3 +26,31 @@ commands:
   Adminhello:
     description: Says hello to an administrator
     usage: /<command>
+
+  About:
+    description: Says a little description of the plugin!
+    usage: /<command>
+
+  hm:
+    description: says hm back.
+    usage: /<command>
+
+  fkill:
+    description: Kills a player with the Frogin plugin.
+    usage: /<command>
+
+  setspawn:
+    description: Sets the spawn
+    usage: /<command>
+
+  spawn:
+    description: Teleports you to the spawn
+    usage: /<command>
+
+  fly:
+    description: Allows the executor to fly if they have the permissions.
+    usage: /<command>
+
+  bangui:
+    description: Opens the ban gui
+    usage: /<command>
