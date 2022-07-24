@@ -15,18 +15,17 @@ public class CreditCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        if (!(sender instanceof Player)) {
+        // code for when its executed from console
+        if (!(sender instanceof Player player)) {
 
             System.out.println("Hello console! All credits go to FrogMan for making the plugin");
 
-
+            //Code for when executed from a player
         } else {
-            Player player = (Player) sender;
-
             player.sendMessage("Hello " + ChatColor.YELLOW +player.getDisplayName() + ChatColor.WHITE + " All credit goes to FrogMan, Credit to Tuchan for the tutorial videos which made the plugin go as far as it did.");
 
         }
 
-        return false;
+        return true;
     }
 }

@@ -2,7 +2,6 @@ package me.froglin.frogin;
 
 import me.froglin.frogin.commands.*;
 import me.froglin.frogin.listeners.Adminjoinlistener;
-import me.froglin.frogin.listeners.FrogJoinlistener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Frogin extends JavaPlugin {
@@ -30,9 +29,11 @@ public final class Frogin extends JavaPlugin {
         getCommand("fkill").setExecutor(new fkillCommand());
         getCommand("setspawn").setExecutor(new setspawnCommand(this));
         getCommand("spawn").setExecutor(new SpawnCommand(this));
-        getCommand("fly").setExecutor(new flyCommand());
+        getCommand("fly").setExecutor(new flyCommandNew());
         getCommand("IDK").setExecutor(new IDKCommand());
         getCommand("vanish").setExecutor(new VanishCommands(this));
+        getCommand("sb").setExecutor(new ScoreboardCommand());
+        getCommand("rtp").setExecutor(new rtpCommand());
     }
 
     @Override
@@ -40,6 +41,7 @@ public final class Frogin extends JavaPlugin {
         // Plugin shutdown logic
 
         System.out.println("Goodbye Console and Frog!");
+
 
     }
 

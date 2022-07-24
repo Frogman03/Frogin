@@ -11,17 +11,18 @@ public class AboutCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
+        // Output when a player executes the command
         if (sender instanceof Player player) {
 
             player.sendMessage(ChatColor.GRAY + "Hello " + ChatColor.YELLOW + player.getDisplayName() + ChatColor.GRAY + " This plugin is described as the Frog-Made plugin!");
 
-
+        // Command output when executed from console
         } else {
             System.out.println("Hello there console, this plugin is described as the Frog-made plugin");
-            return false;
+            return true;
         }
 
-        return false;
+        return true;
     }
 }
 

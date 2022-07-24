@@ -58,3 +58,9 @@ commands:
   vanish:
     description: makes you disappear
     usage: /<command>
+
+  sb:
+    description: Displays the scoreboard test.
+
+  rtp:
+    description: Teleports the player to a random location

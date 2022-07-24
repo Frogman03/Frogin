@@ -20,8 +20,7 @@ public class setspawnCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        if (sender instanceof Player) {
-            Player player = (Player) sender;
+        if (sender instanceof Player player) {
 
             Location location = player.getLocation();
 
@@ -50,6 +49,6 @@ public class setspawnCommand implements CommandExecutor {
         }
 
 
-        return false;
+        return true;
     }
 }

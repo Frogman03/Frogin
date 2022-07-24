@@ -13,13 +13,13 @@ public class hmCommand implements CommandExecutor {
         if (!(sender instanceof Player)) {
             System.out.println("hmmmm mr.console");
 
-            return false;
+            return true;
         } else {
             Player player = (Player) sender;
             player.sendMessage("hmmmmmmm");
 
         }
 
-        return false;
+        return true;
     }
 }

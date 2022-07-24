@@ -14,17 +14,17 @@ public class VersionCommand implements CommandExecutor{
 
         if (!(sender instanceof Player)){
 
-            System.out.println("Hello console! The current version is 0.17 Pre-Release.");
+            System.out.println("Hello console! The current version is 0.21 Pre-Release.");
 
 
         } else {
             Player player = (Player) sender;
 
-            player.sendMessage("Hello " + ChatColor.YELLOW + player.getDisplayName() + ChatColor.WHITE + " the current version is " + ChatColor.RED + "0.17 Pre-Release!" );
+            player.sendMessage("Hello " + ChatColor.YELLOW + player.getDisplayName() + ChatColor.WHITE + " the current version is " + ChatColor.RED + "0.21 Pre-Release!" );
 
 
         }
 
-        return false;
+        return true;
     }
 }

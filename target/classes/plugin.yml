@@ -1,5 +1,5 @@
 name: Frogin
-version: 0.17 Pre-Release
+version: 0.21 Pre-Release
 main: me.froglin.frogin.Frogin
 api-version: 1.18
 authors: [ FrogMan ]
@@ -58,3 +58,9 @@ commands:
   vanish:
     description: makes you disappear
     usage: /<command>
+
+  sb:
+    description: Displays the scoreboard test.
+
+  rtp:
+    description: Teleports the player to a random location
